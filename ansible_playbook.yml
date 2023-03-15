@@ -1,9 +1,8 @@
 ---
 - name: Deploy Docker Container
-  hosts: ubuntu18
-  remote_user: hemc
+  hosts: all
   tasks:
     - name: Pull Docker Image from Docker Hub 
       docker_image:
-              name: h3md0ck3r/scicalc
+              name: adityagowda200/spe-mini-project
               source: pull
