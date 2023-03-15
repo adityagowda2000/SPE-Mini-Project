@@ -4,5 +4,5 @@
   tasks:
     - name: Pull Docker Image from Docker Hub 
       docker_image:
-              name: adityagowda200/spe-mini-project
+              name: adityagowda2000/spe-mini-project
               source: pull
