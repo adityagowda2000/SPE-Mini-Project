@@ -71,34 +71,29 @@ public class Calculator {
 
 
     public double factorial(double number1) {
-        logger.info("[FACTORIAL] - " + number1);
         double result = fact(number1);
-        logger.info("[RESULT - FACTORIAL] - " + result);
+        logger.info("FACTORIAL "+number1+" None "+result);
         return result;
     }
 
 
 
     public double squareRoot(double number1) {
-        logger.info("[SQ ROOT] - " + number1);
         double result = Math.sqrt(number1);
-        logger.info("[RESULT - SQ ROOT] - " + result);
+        logger.info("SQUREROOT "+number1+" None "+result);
         return result;
     }
 
 
     public double power(double number1, double number2) {
-        logger.info("[POWER - " + number1 + " RAISED TO] " + number2);
         double result = Math.pow(number1,number2);
-        logger.info("[RESULT - POWER] - " + result);
+        logger.info("POWER "+number1+" "+number2+" "+result);
         return result;
     }
 
     public double naturalLog(double number1) {
-        logger.info("[NATURAL LOG] - " + number1);
         double result = 0;
         try {
-
             if (number1 <0 ) {
                 result = Double.NaN;
                 throw new ArithmeticException("Case of NaN 0.0/0.0");
@@ -109,7 +104,7 @@ public class Calculator {
         } catch (ArithmeticException error) {
             System.out.println("[EXCEPTION - LOG] - Cannot find log of negative numbers " + error.getLocalizedMessage());
         }
-        logger.info("[RESULT - NATURAL LOG] - " + result);
+        logger.info("NATURALLOG "+number1+" None "+result);
         return result;
     }
     public double fact(double num) {
