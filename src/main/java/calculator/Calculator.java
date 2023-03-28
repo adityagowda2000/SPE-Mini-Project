@@ -110,11 +110,4 @@ public class Calculator {
         logger.info("NATURALLOG "+number1+" None "+result);
         return result;
     }
-
-    // public double fact(double num) {
-    //     double facto = 1;
-    //     for(int i = 1; i <= num; ++i)
-    //     { facto *= i;   }
-    //     return  facto;
-    // }
 }
