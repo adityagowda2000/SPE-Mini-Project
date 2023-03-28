@@ -176,3 +176,5 @@
 2023-03-29 00:27:58.496 [main] INFO  calculator.Calculator - POWER 5.0 3.0 125.0
 2023-03-29 00:27:58.497 [main] INFO  calculator.Calculator - POWER 2.0 10.0 1024.0
 2023-03-29 00:27:58.497 [main] INFO  calculator.Calculator - POWER 4.0 3.0 64.0
+2023-03-29 00:30:36.299 [main] INFO  calculator.Calculator - SQUREROOT 4.0 None 2.0
+2023-03-29 00:30:44.025 [main] INFO  calculator.Calculator - POWER 2.0 0.0 1.0
