@@ -35,6 +35,8 @@ public class CalculatorTest {
         assertEquals("Finding power for True Positive", 81, calculator.power(3, 4), DELTA);
         assertEquals("Finding power for True Positive", 64, calculator.power(4, 3), DELTA);
         assertEquals("Finding power for True Positive", 25, calculator.power(5, 2), DELTA);
+        assertEquals("Finding power for True Positive", 9, calculator.power(3, 2), DELTA);
+        assertEquals("Finding power for True Positive", 0, calculator.power(0, 99), DELTA);
     }
 
     @Test
@@ -43,6 +45,9 @@ public class CalculatorTest {
         assertNotEquals("Finding power for False Positive", -7, calculator.power(3, 3), DELTA);
         assertNotEquals("Finding power for False Positive", 99, calculator.power(4, 3), DELTA);
         assertNotEquals("Finding power for False Positive", -12, calculator.power(5, 3), DELTA);
+        assertNotEquals("Finding power for False Positive", 0, calculator.power(2, 10), DELTA);
+        assertNotEquals("Finding power for False Positive", 16, calculator.power(4, 3), DELTA);
+        
     }
 
     @Test
